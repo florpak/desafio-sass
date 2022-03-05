@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -14,3 +15,59 @@ h2 {
 
 * {
   font-family: 'Source Sans Pro', sans-serif; }
+
+/* Encabezado */
+/* Barra de navegación */
+/* Logo */
+.navbar-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px; }
+  .navbar-brand img {
+    height: 30px; }
+  .navbar-brand p {
+    margin: 0px;
+    margin-left: 10px;
+    font-weight: 800;
+    color: #48c2c2; }
+
+/* Portada Carrousel */
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh; }
+
+/* Servicios */
+/* Sección Servicios */
+#services {
+  padding: 80px 20px 60px 20px;
+  background-image: linear-gradient(160deg, #22cfb8, #19bfce);
+  text-align: center;
+  /* Alineación de elementos Cards */ }
+  #services #content-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    gap: 60px;
+    margin: 40px 0px;
+    justify-content: center;
+    align-items: center;
+    /* Sección Servicios: Cards */ }
+    #services #content-cards .card-services {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      max-width: 250px;
+      border: 0px;
+      /* Sección Servicios: Imagen */
+      /* Sección Servicios: Textos */ }
+      #services #content-cards .card-services img {
+        width: 200px; }
+      #services #content-cards .card-services h3 {
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 15px; }
+      #services #content-cards .card-services p {
+        text-align: center; }
