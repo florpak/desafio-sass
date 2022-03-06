@@ -13,6 +13,19 @@ h2 {
   font-weight: 900;
   margin-bottom: 20px; }
 
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: black; }
+
+.rrss img {
+  width: 25px; }
+
+.footer-mail {
+  width: 25px;
+  margin-right: 5px; }
+
 * {
   font-family: 'Source Sans Pro', sans-serif; }
 
@@ -71,3 +84,80 @@ h2 {
         margin-top: 15px; }
       #services #content-cards .card-services p {
         text-align: center; }
+
+/* Portfolio */
+/* Sección Portfolio */
+#works {
+  padding: 80px 20px 50px 20px;
+  text-align: center;
+  /* Sección Proyectos: Botón a Todos los Proyectos */ }
+  #works #portfolio {
+    margin: 1px;
+    /* Márgenes */ }
+    #works #portfolio .content-works, #works #portfolio .container-sm, #works #portfolio .container-md, #works #portfolio .container-lg, #works #portfolio .container-xl, #works #portfolio .container-xxl {
+      max-width: 1920px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      /* Grilla Cards Proyectos */ }
+      #works #portfolio .content-works .grid-works, #works #portfolio .container-sm .grid-works, #works #portfolio .container-md .grid-works, #works #portfolio .container-lg .grid-works, #works #portfolio .container-xl .grid-works, #works #portfolio .container-xxl .grid-works {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+        gap: 25px;
+        margin: 40px 0px;
+        justify-content: center;
+        align-items: center;
+        /* Sección Proyectos: Cards */ }
+        #works #portfolio .content-works .grid-works .portfolio-box, #works #portfolio .container-sm .grid-works .portfolio-box, #works #portfolio .container-md .grid-works .portfolio-box, #works #portfolio .container-lg .grid-works .portfolio-box, #works #portfolio .container-xl .grid-works .portfolio-box, #works #portfolio .container-xxl .grid-works .portfolio-box {
+          position: relative;
+          display: block;
+          height: 260px;
+          width: 400px;
+          transition: 0.5s;
+          /* Imagen */ }
+          #works #portfolio .content-works .grid-works .portfolio-box:hover, #works #portfolio .container-sm .grid-works .portfolio-box:hover, #works #portfolio .container-md .grid-works .portfolio-box:hover, #works #portfolio .container-lg .grid-works .portfolio-box:hover, #works #portfolio .container-xl .grid-works .portfolio-box:hover, #works #portfolio .container-xxl .grid-works .portfolio-box:hover {
+            transform: scale(1.03); }
+          #works #portfolio .content-works .grid-works .portfolio-box img, #works #portfolio .container-sm .grid-works .portfolio-box img, #works #portfolio .container-md .grid-works .portfolio-box img, #works #portfolio .container-lg .grid-works .portfolio-box img, #works #portfolio .container-xl .grid-works .portfolio-box img, #works #portfolio .container-xxl .grid-works .portfolio-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px; }
+          #works #portfolio .content-works .grid-works .portfolio-box .portfolio-box-caption, #works #portfolio .container-sm .grid-works .portfolio-box .portfolio-box-caption, #works #portfolio .container-md .grid-works .portfolio-box .portfolio-box-caption, #works #portfolio .container-lg .grid-works .portfolio-box .portfolio-box-caption, #works #portfolio .container-xl .grid-works .portfolio-box .portfolio-box-caption, #works #portfolio .container-xxl .grid-works .portfolio-box .portfolio-box-caption {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            opacity: 0;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            transition: opacity 0.25s ease;
+            text-align: center;
+            border-radius: 15px; }
+            #works #portfolio .content-works .grid-works .portfolio-box .portfolio-box-caption:hover, #works #portfolio .container-sm .grid-works .portfolio-box .portfolio-box-caption:hover, #works #portfolio .container-md .grid-works .portfolio-box .portfolio-box-caption:hover, #works #portfolio .container-lg .grid-works .portfolio-box .portfolio-box-caption:hover, #works #portfolio .container-xl .grid-works .portfolio-box .portfolio-box-caption:hover, #works #portfolio .container-xxl .grid-works .portfolio-box .portfolio-box-caption:hover {
+              opacity: 1; }
+            #works #portfolio .content-works .grid-works .portfolio-box .portfolio-box-caption .project-category, #works #portfolio .container-sm .grid-works .portfolio-box .portfolio-box-caption .project-category, #works #portfolio .container-md .grid-works .portfolio-box .portfolio-box-caption .project-category, #works #portfolio .container-lg .grid-works .portfolio-box .portfolio-box-caption .project-category, #works #portfolio .container-xl .grid-works .portfolio-box .portfolio-box-caption .project-category, #works #portfolio .container-xxl .grid-works .portfolio-box .portfolio-box-caption .project-category {
+              font-size: 1.2rem;
+              font-weight: 600;
+              text-transform: uppercase;
+              color: white; }
+            #works #portfolio .content-works .grid-works .portfolio-box .portfolio-box-caption .project-name, #works #portfolio .container-sm .grid-works .portfolio-box .portfolio-box-caption .project-name, #works #portfolio .container-md .grid-works .portfolio-box .portfolio-box-caption .project-name, #works #portfolio .container-lg .grid-works .portfolio-box .portfolio-box-caption .project-name, #works #portfolio .container-xl .grid-works .portfolio-box .portfolio-box-caption .project-name, #works #portfolio .container-xxl .grid-works .portfolio-box .portfolio-box-caption .project-name {
+              font-size: 1rem;
+              font-weight: 300; }
+  #works .button-works {
+    width: 180px;
+    height: 45px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    transition: .5s; }
+    #works .button-works:hover {
+      background-color: rgba(0, 0, 0, 0.8); }
+    #works .button-works a {
+      text-decoration: none;
+      color: black;
+      transition: .5s; }
+      #works .button-works a:hover {
+        color: white; }
