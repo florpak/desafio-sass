@@ -161,3 +161,29 @@ h2 {
       transition: .5s; }
       #works .button-works a:hover {
         color: white; }
+
+/* Sobre Mí */
+/* Sección Sobre Mí */
+#about {
+  padding: 80px 20px 50px 20px;
+  background-image: linear-gradient(160deg, #22cfb8, #19bfce);
+  /* Sección Sobre Mí: Imagen */
+  /* Sección Sobre Mí: Botón a Currículum */ }
+  #about .about-img {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); }
+  #about .button-cv {
+    width: 180px;
+    height: 45px;
+    border-color: white;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    transition: .5s; }
+    #about .button-cv:hover {
+      border-color: white;
+      background-color: white; }
+    #about .button-cv a {
+      text-decoration: none;
+      color: white;
+      transition: .5s; }
+      #about .button-cv a:hover {
+        color: black; }
