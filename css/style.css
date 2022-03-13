@@ -263,7 +263,7 @@ h2 {
 #works {
   margin-bottom: 14rem; }
 
-.title-head-page, .title-project {
+.title-head-page {
   font-size: 40px;
   font-weight: 1000;
   margin-top: 1.5rem;
@@ -273,39 +273,3 @@ h2 {
   transition: .5s; }
   .card-work:hover {
     transform: scale(1.03); }
-
-/* PÁGINA: Proyectos Individuales */
-.title-project {
-  font-weight: 700; }
-
-.description-project {
-  font-size: 16px;
-  color: #5e5e5e; }
-
-/* Grilla de galería de imágenes */
-/* Márgenes */
-.content-galery {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  /* Grilla Cards Proyectos */ }
-  .content-galery .grid-galery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
-    gap: 18px;
-    justify-content: center;
-    align-items: center;
-    /* Imágenes */
-    /* Frames */ }
-    .content-galery .grid-galery .img-galery {
-      transition: 0.4s; }
-      .content-galery .grid-galery .img-galery:hover {
-        transform: scale(1.03);
-        border: 2px solid #a8a8a8; }
-    .content-galery .grid-galery .frame {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px; }
-      .content-galery .grid-galery .frame iframe {
-        width: 94%;
-        height: 350px;
-        border-radius: 15px; }
