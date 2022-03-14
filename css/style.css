@@ -260,10 +260,10 @@ h2 {
     display: none; } }
 
 /* PÁGINA: Todos los proyectos */
-#works {
+.works {
   margin-bottom: 14rem; }
 
-.title-head-page {
+.title-head-page, .title-project {
   font-size: 40px;
   font-weight: 1000;
   margin-top: 1.5rem;
@@ -273,3 +273,55 @@ h2 {
   transition: .5s; }
   .card-work:hover {
     transform: scale(1.03); }
+
+/* PÁGINA: Proyecto Individual */
+.title-project {
+  font-weight: 700; }
+
+.description-project {
+  font-size: 16px;
+  color: #5e5e5e; }
+
+/* Grilla Galería de Imágenes */
+#works {
+  padding: 80px 20px 50px 20px;
+  text-align: center; }
+  #works #portfolio {
+    margin: 1px;
+    /* Márgenes */ }
+    #works #portfolio .content-galery, #works #portfolio .container-sm, #works #portfolio .container-md, #works #portfolio .container-lg, #works #portfolio .container-xl, #works #portfolio .container-xxl {
+      max-width: 1920px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      /* Grilla Cards Proyectos */
+      /* Frames */ }
+      #works #portfolio .content-galery .grid-galery, #works #portfolio .container-sm .grid-galery, #works #portfolio .container-md .grid-galery, #works #portfolio .container-lg .grid-galery, #works #portfolio .container-xl .grid-galery, #works #portfolio .container-xxl .grid-galery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+        gap: 18px;
+        justify-content: center;
+        align-items: center; }
+        #works #portfolio .content-galery .grid-galery .portfolio-box, #works #portfolio .container-sm .grid-galery .portfolio-box, #works #portfolio .container-md .grid-galery .portfolio-box, #works #portfolio .container-lg .grid-galery .portfolio-box, #works #portfolio .container-xl .grid-galery .portfolio-box, #works #portfolio .container-xxl .grid-galery .portfolio-box {
+          position: relative;
+          display: block;
+          height: 260px;
+          width: 400px;
+          /* Imagen */ }
+          #works #portfolio .content-galery .grid-galery .portfolio-box .img-galery, #works #portfolio .container-sm .grid-galery .portfolio-box .img-galery, #works #portfolio .container-md .grid-galery .portfolio-box .img-galery, #works #portfolio .container-lg .grid-galery .portfolio-box .img-galery, #works #portfolio .container-xl .grid-galery .portfolio-box .img-galery, #works #portfolio .container-xxl .grid-galery .portfolio-box .img-galery {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 2px solid rgba(168, 168, 168, 0);
+            transition: 0.4s; }
+            #works #portfolio .content-galery .grid-galery .portfolio-box .img-galery:hover, #works #portfolio .container-sm .grid-galery .portfolio-box .img-galery:hover, #works #portfolio .container-md .grid-galery .portfolio-box .img-galery:hover, #works #portfolio .container-lg .grid-galery .portfolio-box .img-galery:hover, #works #portfolio .container-xl .grid-galery .portfolio-box .img-galery:hover, #works #portfolio .container-xxl .grid-galery .portfolio-box .img-galery:hover {
+              transform: scale(1.03);
+              border: 2px solid rgba(168, 168, 168, 0.4); }
+      #works #portfolio .content-galery .frame, #works #portfolio .container-sm .frame, #works #portfolio .container-md .frame, #works #portfolio .container-lg .frame, #works #portfolio .container-xl .frame, #works #portfolio .container-xxl .frame {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px; }
+        #works #portfolio .content-galery .frame iframe, #works #portfolio .container-sm .frame iframe, #works #portfolio .container-md .frame iframe, #works #portfolio .container-lg .frame iframe, #works #portfolio .container-xl .frame iframe, #works #portfolio .container-xxl .frame iframe {
+          width: 94%;
+          height: 350px;
+          border-radius: 15px; }
