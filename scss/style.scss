@@ -22,7 +22,7 @@
         margin: 0px;
         margin-left: 10px;
         font-weight: 800;
-        color: rgb(72, 194, 194);
+        color: $color-principal;
     }
 }
 
@@ -81,6 +81,16 @@
         }
     }
 }
+
+// Mixin
+@mixin estilos ($width, $height, $color-borde, $borde-redondeado, $margen-inferior, $transicion) {
+    width: $width;
+    height: $height;
+    border-color: $color-borde;
+    border-radius: $borde-redondeado;
+    margin-bottom: $margen-inferior;
+    transition: $transicion;
+}    
 
 /* Portfolio */
 
@@ -166,11 +176,7 @@
 
     /* Sección Proyectos: Botón a Todos los Proyectos */
     .button-works {
-        width: 180px;
-        height: 45px;
-        border-radius: 50px;
-        margin-bottom: 40px;
-        transition: .5s;
+        @include estilos (180px, 45px, none, 50px, 40px, .5s)
         &:hover {
             background-color: rgba(0, 0, 0, 0.8)
         }
@@ -201,12 +207,7 @@
 
     /* Sección Sobre Mí: Botón a Currículum */
     .button-cv {
-        width: 180px;
-        height: 45px;
-        border-color: white;
-        border-radius: 50px;
-        margin-bottom: 40px;
-        transition: .5s;
+        @include estilos (180px, 45px, white, 50px, 40px, .5s)
 
         &:hover {
             border-color: white;
@@ -237,11 +238,7 @@
     .button-submit {
         margin-top: 40px;
         button {
-            width: 180px;
-            height: 45px;
-            border-radius: 50px;
-            margin-bottom: 40px;
-            transition: .5s;
+            @include estilos (180px, 45px, none, 50px, 40px, .5s)
             &:hover {
                 background-color: rgba(0, 0, 0, 0.8)
             }
@@ -279,6 +276,40 @@
 .description-project {
     font-size: 16px;
     color: rgb(94, 94, 94);
+}
+
+/* Breadcrum */
+
+// Map-get
+$estilo-bold: (
+    ftamano: 15px,
+    fvariable: 400,
+    color: black,
+    subrayado: none,
+);
+
+$estilo-light: (
+    ftamano: 16px,
+    fvariable: 300,
+    color: grey,
+    subrayado: none,
+);
+
+.back-project {
+    font-size: map-get($estilo-bold, ftamano);
+    font-weight: map-get($estilo-bold, fvariable);
+    color: map-get($estilo-bold, color);
+    text-decoration: map-get($estilo-bold, subrayado);
+    &:hover {
+        color: $color-principal;
+    }
+}
+
+.actual-project {
+    font-size: map-get($estilo-light, ftamano);
+    font-weight: map-get($estilo-light, fvariable);
+    color: map-get($estilo-light, color);
+    text-decoration: map-get($estilo-light, subrayado);
 }
 
 /* Grilla Galería de Imágenes */
