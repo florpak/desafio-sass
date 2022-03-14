@@ -249,59 +249,6 @@
     }
 }
 
-/* Responsive Medias */
-
-@media (max-width: 991px) {
-    .main-nav {
-        display: none;
-    }
-
-    .nav-responsive {
-        visibility: visible;
-
-            /* Navbar button responsive */
-        .burgernav {
-            border: 1px solid rgb(216, 216, 216) !important;
-            margin-right: 2%;
-        }
-    }
-}
-
-@media (min-width: 992px) {
-    .nav-responsive {
-        display: none;
-    }
-}
-
-@media (max-width: 450px) {
-    .grid-works {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
-        gap: 15px;
-        margin: 20px 0px;
-        justify-content: center;
-        align-items: center;
-
-        .portfolio-box {
-            height: 260px;
-            width: 200px;
-    
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 15px;
-            }
-        }
-    }
-}
-
-@media (max-width: 325px) {
-    .navbar-brand p {
-        display: none;
-    }
-}
-
 /* PÁGINA: Todos los proyectos */
 
 .works {
@@ -455,3 +402,114 @@
     }
 }
 
+/* Responsive Medias */
+
+/* Menú responsive */
+
+@media (max-width: 991px) {
+    .main-nav {
+        display: none;
+    }
+
+    .nav-responsive {
+        visibility: visible;
+
+            /* Navbar button responsive */
+        .burgernav {
+            border: 1px solid rgb(216, 216, 216) !important;
+            margin-right: 2%;
+        }
+    }
+}
+
+/* Menú responsive: Menú plegable */
+
+@media (min-width: 992px) {
+    .nav-responsive {
+        display: none;
+    }
+}
+
+/* Galerías de Portfolio */
+
+@media (max-width: 450px) {
+
+    #works {
+        padding: 80px 20px 50px 20px;
+        text-align: center;
+    
+        #portfolio {
+            margin: 1px;
+            /* Márgenes */
+            .content-works, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+                max-width: 1920px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+
+                .grid-works {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+                    gap: 15px;
+                    margin: 20px 0px;
+                    justify-content: center;
+                    align-items: center;
+
+                    .portfolio-box {
+                        height: 260px;
+                        width: 200px;
+                
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #works {
+        padding: 80px 20px 50px 20px;
+        text-align: center;
+    
+        #portfolio {
+            margin: 1px;
+            /* Márgenes */
+            .content-galery, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+                max-width: 1920px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+
+                .grid-galery {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+                    gap: 18px;
+                    justify-content: center;
+                    align-items: center;
+
+                    .portfolio-box {
+                        height: 260px;
+                        width: 200px;
+                
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Menú responsive: Logotipo texto */
+
+@media (max-width: 325px) {
+    .navbar-brand p {
+        display: none;
+    }
+}
