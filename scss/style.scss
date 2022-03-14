@@ -176,7 +176,7 @@
 
     /* Sección Proyectos: Botón a Todos los Proyectos */
     .button-works {
-        @include estilos (180px, 45px, none, 50px, 40px, .5s)
+        @include estilos (180px, 45px, none, 50px, 40px, .5s);
         &:hover {
             background-color: rgba(0, 0, 0, 0.8)
         }
@@ -207,7 +207,7 @@
 
     /* Sección Sobre Mí: Botón a Currículum */
     .button-cv {
-        @include estilos (180px, 45px, white, 50px, 40px, .5s)
+        @include estilos (180px, 45px, white, 50px, 40px, .5s);
 
         &:hover {
             border-color: white;
@@ -238,7 +238,7 @@
     .button-submit {
         margin-top: 40px;
         button {
-            @include estilos (180px, 45px, none, 50px, 40px, .5s)
+            @include estilos (180px, 45px, none, 50px, 40px, .5s);
             &:hover {
                 background-color: rgba(0, 0, 0, 0.8)
             }
