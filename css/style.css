@@ -325,3 +325,42 @@ h2 {
           width: 94%;
           height: 350px;
           border-radius: 15px; }
+
+/* PÁGINA: Currículum */
+/* Márgenes del Título Principal */
+.title-curriculum {
+  margin-top: 100px;
+  margin-bottom: 50px; }
+
+/* Cuerpo de CV */
+.content-cv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  margin-left: 3rem; }
+  .content-cv .categoria {
+    margin-bottom: 20px; }
+    .content-cv .categoria .title_cat {
+      margin-bottom: 10px; }
+      .content-cv .categoria .title_cat h3 {
+        font-weight: 350;
+        font-size: 30px; }
+    .content-cv .categoria .rubro {
+      margin: 10px 30px 20px; }
+      .content-cv .categoria .rubro h4 {
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 3px; }
+      .content-cv .categoria .rubro p {
+        font-weight: 350;
+        font-size: 17px; }
+        .content-cv .categoria .rubro p li {
+          margin-left: 25px;
+          list-style: none; }
+    .content-cv .categoria img {
+      margin: 5px;
+      width: 40px; }
+      .content-cv .categoria img:hover {
+        opacity: 0.6; }
